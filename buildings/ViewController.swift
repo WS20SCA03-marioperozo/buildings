@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var label: UILabel!
     
     struct Building {      //in the file Building.swift
         let name: String;
@@ -83,18 +84,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         stackView.addArrangedSubview(buildingImage);
                     }
                 } else {
-                    print("\(street) Street has no noteworthy buildings.");
+                    label.text = "\(street) Street has no noteworthy buildings.";
                 }
                 
-                
-                }
                 
             }
-            
             
         }
         
         
-        
+    }
+    
+    
+    
 }
 
